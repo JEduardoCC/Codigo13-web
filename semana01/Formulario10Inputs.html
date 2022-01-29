@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FORMULARIO TAREA</h1>
+    <form action="" method="">
+      <label for="">
+        1. Nombres:
+        <input type="text" name="Nombre" placeholder="Ingrese sus nombres" />
+      </label>
+      <br />
+      <br />
+
+      <label for="">
+        2. Apellidos:
+        <input
+          type="text"
+          name="Apellidos"
+          placeholder="Ingrese sus apellidos"
+        />
+      </label>
+      <br />
+      <br />
+
+      <label for="">
+        3. Sexo:
+        <p>
+          <input type="radio" name="Sexo" checked />Masculino
+          <input type="radio" name="Sexo" />Femenino
+        </p>
+      </label>
+
+      <label for="">
+        4. Dni:
+        <input type="number" name="dni" placeholder="Ingrese su DNI" />
+      </label>
+      <br />
+      <br />
+
+      <label for="">
+        5. Telefono:
+        <input type="tel" name="telefono" placeholder="Ingrese su telefono" />
+      </label>
+      <br />
+      <br />
+
+      <label for="">
+        6. Fecha de Nacimiento:
+        <input type="date" name="fechaNacimiento" />
+      </label>
+      <br />
+      <br />
+
+      <label for="">
+        7. Cursos a elegir:
+        <p>
+          <input type="checkbox" name="checkbox[]" /> Curso 1
+          <input type="checkbox" name="checkbox[]" /> Curso 2
+          <input type="checkbox" name="checkbox[]" /> Curso 3
+        </p>
+      </label>
+
+      <label for="">
+        8. Direccion:
+        <input type="text" name="Direccion" />
+      </label>
+      <br />
+      <br />
+
+      <label for="">
+        9. Color de carnet:
+        <input type="color" name="color" />
+      </label>
+      <br />
+      <br />
+
+      <label for="">
+        10. Escoja un rango de horas:
+        <br>  
+        1<input type="range" list="rango" />3
+
+        <datalist id="rango">
+            <option value="0" label="0%">
+            <option value="50">
+            <option value="100">
+
+          </datalist>
+
+      </label>
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
