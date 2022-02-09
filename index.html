@@ -1,141 +1,63 @@
-<!-- ESTRUCTURA DE HTML -->
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <title>Codigo Front 13</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Portafolio</title>
 </head>
-
 <body>
+    <div class="contenedor-principal">
+        <h1>Mi portafolio</h1>
 
-  <h1>Inputs</h1>
-  <a href="./semana01/inputs.html">Tipos de Inputs</a>
+            <p>Hola mi nombre es Eduardo Chipana, soy estudiante del bootcamp Codigo Tecsup,
+            y estoy aprendiendo HTML,Css y JS.
+            </p>
+            <img src="./img/img_perfil.jpg" class="img-perfil" alt="perfil" width="200px">
 
-  <h1>Formulario</h1>
-  <a href="./semana01/form.html">Formulario</a>
-
-  <h1>Tablas</h1>
-  <a href="./semana01/table.html">Tablas</a>
-
-  <h1>Tablero Ajedrez</h1>
-  <a href="./semana01/TableroAjedrez.html">Tablero Ajedrez</a>
-
-  <h1>Formulario 10 inputs</h1>
-  <a href="./semana01/Formulario10Inputs.html">Formulario 10 inputs</a>
-
-  <!-- Las etiqueta de titulo h1 - h6 -->
-  <h1>Titulo 1</h1>
-  <h2>Titulo 2</h2>
-  <h3>Titulo 3</h3>
-  <h4>Titulo 4</h4>
-  <h5>Titulo 5</h5>
-  <h6>Titulo 6</h6>
-  <!-- Parrafos -->
-  <p>
-    Hola mi nombre es Linder, estoy construyendo mi pagian web
-  </p>
-
-  <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad sunt totam accusantium aliquam rerum. Cum consequatur
-    assumenda, facere praesentium sit est molestias minus excepturi fugit quia repellendus soluta beatae. Unde?
-  </p>
-
-  <!-- Etiqueta o bold -->
-  <p>
-    Hola mi nombre es
-    <b>Linder Hassinger</b>
-    y soy
-    <strong> Software Developer</strong>
-    <!-- Etiqueta cursiva -->
-    <i>naci en Lima, Peru</i>
-  </p>
-
-  <!-- Subrayado -->
-  <h4>
-    <u>
-      <i>Mis datos</i>
-    </u>
-  </h4>
-
-  <!-- BR: Es para saltos de lines -->
-  <!-- No deben usarla -->
-  <p>
-    Componentes de una computadora:
-    <br />
-    Monitor
-    <br />
-    Teclado
-    <br />
-    Mouse
-  </p>
-
-  <b>Lista de cursos</b>
-
-  <br>
-
-  <i>Curso de HTML, CSS y JS</i>
-
-  <!-- Para poder citar textos -->
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum amet maiores expedita quod maxime illum fugit
-    doloribus quas repellat accusantium eos fugiat cum, impedit error ullam pariatur tempora ea quo.
-  </p>
-  <blockquote>
-    Texto de un escritor que quiere ser citado
-  </blockquote>
-
-  <!-- Hipervinculos -->
-  <p>
-    <a href="https://www.youtube.com/" target="_blank">
-      Link a youtube
-    </a>
-  </p>
-  <p>
-    <a href="https://www.google.com/" target="_blank">
-      Link a Google
-    </a>
-  </p>
-  <p>
-    <a href="https://www.linkedin.com/">Linkedin</a>
-  </p>
+            <p>
+                <a class="btn-github" href="https://github.com/JEduardoCC">
+                    <img src="./img/Github.png" alt="" width="15"> GitHub
+                </a>
+            </p>
 
 
-  <!-- TAREA PARA AHORA -->
-  <!-- CREAR 3 PARRAFOS USANDO p -->
-  <!-- CREAR 3 LINKS a google, youtube y su pagina prefereida -->
+    </div>
 
-
-  <!-- Etiquetas multimedia  -->
-  <!-- Puedo poner el link una imagen -->
+    <ul>
+        <li>
+          <h5>Semana 1</h5>
+          <img
+            src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png"
+            alt="semana1"
+            width="100"
+          />
+        </li>
+        <li>
+          <h5>Semana 2</h5>
+          <img
+            src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png"
+            alt="semana1"
+            width="100"
+          />
+        </li>
+      </ul>
   
-  <img src="https://seeklogo.com/images/D/Dragon_Ball_Z-logo-0C7B78BE7E-seeklogo.com.png" alt="Dragon Ball Z Imagen"
-    width="200" height="200" />
-
-  <!-- Imagen local -->
-  <a href="https://www.youtube.com/" target="_blank">
-    <img src="./img/YouTube-logo.png" width="200" />
-  </a>
-
-  <!-- Video -->
-  <video controls autoplay width="400" height="400" muted >
-    <source src="./videos/video.mp4" />
-  </video>
-
-  <!-- Audio -->
-  <audio controls autoplay muted>
-      <source src="./audios/audio.mp3"/> 
-  </audio>
-
+      <div>
+        <h3>Temas semana 1</h3>
+        <a class="link-referencia" href="./semana01/inputs.html"
+          >Link para inputs</a
+        >
+        <a class="link-referencia" href="./semana01/form.html"
+          >Link a formularios</a
+        >
+        <a class="link-referencia" href="./semana01/table.html">Link a Tablas</a>
+      </div>
   
-  <!-- iframe -->
- <!-- <iframe src="./pdfs/Aprende PHP con ejercicios.pdf" width="500" height="500">-->
-
-  </iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bFvfqUMjvsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
-
+      <div>
+        <h3>Temas semana 2</h3>
+        <a class="link-referencia" href="./semana02/index.html">Introducción a CSS</a>
+      </div>
 </body>
-
 </html>
