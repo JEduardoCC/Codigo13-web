@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Barlow", sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    background-color: #40bfff !important;
+    background: url("../images/desktop/image-header.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 70%;
+
+}
+
+.nav div{
+    padding: 20px;
+}
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+}
+.menu-nav li{
+    padding-right: 30px;
+    
+}
+
+.menu-nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-contact{
+    background-color:whitesmoke;
+    font-family: "Fraunces", serif;
+    color: black !important;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+
+}
+
+.content-tittle{
+    color: white;
+    text-align: center;
+}
+
+.content-tittle h1{
+    font-family: "Fraunces",serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+}
+
+.grid-container div{
+    height: 33.3vh;
+}
+.grid-container{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: "transform transform-image"
+    "stantout stantout-image";
+}
+.item1{
+    grid-area: transform;
+}
+.item2{
+    background: url("../images/desktop/image-transform.jpg");
+    grid-area: transform-image;
+}
+
+.item3{
+    background: url("../images/desktop/image-stand-out.jpg");
+    grid-area: stantout;
+}
+
+.item4{
+    grid-area: stantout-image;
+}

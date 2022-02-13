@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+}
+.titulo{
+    font-size: 3em;
+    color: blueviolet;
+}
+
+.parrafo{
+    font-size: 50px;
+}
+
+.banner{
+    background-color: blue;
+    height: 40vh;
+    width: 25%;
+}
+
+.banner-medio{
+    height: 20vh;
+    background-color: pink;
+    width: 50%;
+}
+
+.banner-dos{
+    height: 40vh;
+    background-color: green;
+    width: 75%;
+}
+
+.banner-tres{
+    height: 100vh;
+    background-color: yellow;
+    width: 100%;
+}
+
+.banner-cuartro{
+    height: 100vh;
+    background-color: red;
+    width: 100%;
+}

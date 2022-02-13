@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+}
+
+/*Selector descendientes*/
+.contenedor p{
+    color: blue;
+}
+
+.contenedor-dos h2{
+    color: red;
+}
+
+.contenedor-tres a img{
+    border: 2px solid blue;
+}
+
+.menu-navegacion{
+    margin: 20px;
+}
+
+/*el signo mayor, hace referencia que li es el hijo NATIVO de ul, es decir los li solo funcionan
+con el ul. Otro ejm, son las tablas td y tr*/
+/*
+ul>li{
+    border: 3px solid green;
+}
+*/
+
+.link-navegacion{
+    border: 3px solid green;
+}
+
+input[type="email"]{
+    background-color: red;
+}
+
+input[type="text"]{
+    color: aqua;
+}
+
+input[type="password"]{
+    color: blue;
+}
+
