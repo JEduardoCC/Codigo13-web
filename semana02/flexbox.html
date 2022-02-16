@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enlazando con archivo css -->
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <title>flexbox</title>
+  </head>
+  <body>
+    <h1>FLEX</h1>
+    <div>
+      <ul>
+        <li>
+          Para usar flex, primero se debe colocar <b>"display: flex"</b> en el
+          elemento padre
+        </li>
+        <li>
+          Por defecto, la propiedad "flex-direction: row" (Los elementos se
+          alinearan en fila)
+        </li>
+        <li>
+          Por defecto, la propiedad "flex-wrap: nowrap" (Solo trabajara con una
+          fila)
+        </li>
+        <li>
+          Cuando se una propiedad "row reverse" o "column reverse", las
+          propiedades se invierten
+        </li>
+        <li>
+          Cuando se usa propiedad "column", justify-content cambia a vertical y
+          align-items a horizontal.
+        </li>
+
+        <li>
+          <b>"flex-flow"</b>, es una propiedad que combina flex-direction y
+          flex-wrap. Acepta un valor de cada una separada por un espacio.<br />
+          Ejem: flex-flow: column-reverse wrap-reverse;
+        </li>
+        <li>
+          <b>"align-content"</b>, propiedad que mueve todos los elementos que
+          estan organizados en mas de una fila.
+          <ul class="ac-ul">
+            <li>
+              Es una propiedad que trabaja obligatoriamente con "flex-wrap:
+              wrap"
+            </li>
+            <li>
+              Sus valores son: flex-start, flex-end, center, space-between,
+              space-around y stretch.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Para practicar:
+          <a href="https://flexboxfroggy.com/#es" target="_blank">
+            FlexBox-Froggy &nbsp
+            <img
+              src="https://flexboxfroggy.com/images/frog-green.svg"
+              alt=""
+              width="35px"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=C_o3MJ0xDDE" target="_blank">
+            Solucion a FlexBox-Froggy</a
+          >
+        </li>
+      </ul>
+    </div>
+    <br />
+    <hr />
+    <h2>"flex-direction: row"</h2>
+    <div>
+      <ul>
+        <li>Por defecto, al usar flex la propiedad flex-direction es row</li>
+        <li>Alinea los elementos en fila</li>
+      </ul>
+    </div>
+    <section class="section-uno">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+      <div>
+        <p>Item 4</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>"flex-direction: row-reverse"</h2>
+    <div>
+      <ul>
+        <li>Alinea los elementos en fila, pero invierte el orden.</li>
+        <li>Los alinea al lado superior derecha</li>
+      </ul>
+    </div>
+    <section class="section-dos">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+      <div>
+        <p>Item 4</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>"flex-direction: column"</h2>
+    <div>
+      <ul>
+        <li>Alinea los elementos en columna, en funcion del elemento padre</li>
+        <li>No cambia el orden de los elementos</li>
+      </ul>
+    </div>
+    <section class="section-tres">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+      <div>
+        <p>Item 4</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>"flex-direction: column-reverse"</h2>
+    <div>
+      <ul>
+        <li>
+          Alinea los elementos en columna, por defecto a la izquierda inferior
+          del elemento padre
+        </li>
+        <li>Invierte el orden de los elementos</li>
+      </ul>
+    </div>
+    <section class="section-cuatro">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+      <div>
+        <p>Item 4</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>"flex wrap: wrap"</h2>
+    <div>
+      <ul>
+        <li>
+          Por defecto, al usar flex la propiedad es "flex-wrap: nowrap" (Solo
+          trabajara con una fila)
+        </li>
+        <li>"flex-wrap:wrap", permite crear mas filas cuando se usa flex</li>
+        <li>
+          Existe la propiedad "flex-wrap:wrap-reverse" , permite crear mas filas
+          cuando se usa flex pero invierte el orden de los elementos.
+        </li>
+        <li>
+          Para determinar la cantidad de items, se dividira el 100% (Ancho total
+          de la pantalla) entre la cantidad de items a colocar. <br />
+          Ejemplo: 100% / 4 items = 25% <br />
+          Este resultado debe ir en la propiedad "width" del contenedor de los
+          items. (width: 25%;)
+        </li>
+      </ul>
+    </div>
+    <section class="section-cinco">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+      <div>
+        <p>Item 4</p>
+      </div>
+      <div>
+        <p>Item 5</p>
+      </div>
+      <div>
+        <p>Item 6</p>
+      </div>
+      <div>
+        <p>Item 7</p>
+      </div>
+      <div>
+        <p>Item 8</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>flex-grow: 1</h2>
+    <div>
+      <ul>
+        <li>
+          Distribuye el espacio sobrante del ancho de pantalla, entre
+          <b> todos los elementos </b> afectados por "flex-grow: 1" en
+          proporciones iguales.
+        </li>
+      </ul>
+    </div>
+    <section class="section-seis">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+      <div>
+        <p>Item 4</p>
+      </div>
+      <div>
+        <p>Item 5</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>"flex-grow: 1" en item 2 y "flex-grow: 2" en item 4</h2>
+    <div>
+      <ul>
+        <li>
+          Al tener "flex-grow" solo en dos items, se distribuira el espacio
+          sobrante del ancho de pantalla entre esos dos elementos, de acuerdo a
+          su valor en flex-grow.
+        </li>
+        <li>El item 2 al tener "flex-grow: 1" aumenta de ancho.</li>
+        <li>
+          El item 4 al tener "flex-grow: 2" aumenta el doble del ancho del item
+          2.
+        </li>
+        <li>
+          Para casos similares, su propiedad inversa es <b>"flex-shrink" </b>
+        </li>
+      </ul>
+    </div>
+    <section class="section-siete">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div class="fg-item2">
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+      <div class="fg-item4">
+        <p>Item 4</p>
+      </div>
+      <div>
+        <p>Item 5</p>
+      </div>
+    </section>
+
+    <br />
+
+    <h1>Alineaciones Verticales</h1>
+    <br />
+
+    <h2>align-items:center</h2>
+    <div>
+      <ul>
+        <li>Alinea los items, al medio verticalmente del elemento padre</li>
+      </ul>
+    </div>
+    <section class="section-ocho">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>align-items:flex-start</h2>
+    <div>
+      <ul>
+        <li>
+          Alinea los items, en la parte superior verticalmente del elemento
+          padre
+        </li>
+      </ul>
+    </div>
+    <section class="section-nueve">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>align-items:flex-end</h2>
+    <div>
+      <ul>
+        <li>
+          Alinea los items, en la parte inferior verticalmente del elemento
+          padre
+        </li>
+      </ul>
+    </div>
+    <section class="section-diez">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>align-items:stretch (afecta al div)</h2>
+    <div>
+      <ul>
+        <li>Ocupa todo el espacio verticalmente del elemento padre</li>
+        <li>
+          Para que tenga efecto, eliminar el atributo "height" del elemento
+          hijo.
+        </li>
+      </ul>
+    </div>
+    <section class="section-once">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h1>Alineaciones Horizontales</h1>
+    <br />
+
+    <h2>justify-content: center</h2>
+    <div>
+      <ul>
+        <li>Alinea los items, al medio horizontalmente del elemento padre</li>
+      </ul>
+    </div>
+    <section class="section-doce">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>justify-content: flex-start</h2>
+    <div>
+      <ul>
+        <li>Alinea los items, a la izquierda del elemento padre</li>
+      </ul>
+    </div>
+    <section class="section-trece">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>justify-content: flex-end</h2>
+    <div>
+      <ul>
+        <li>Alinea los items, a la derecha del elemento padre</li>
+      </ul>
+    </div>
+    <section class="section-catorce">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>justify-content: space-between</h2>
+    <div>
+      <ul>
+        <li>Distruye espacios entre los items</li>
+        <li>Usa el margen del contenedor</li>
+      </ul>
+    </div>
+    <section class="section-quince">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>justify-content: space-around</h2>
+    <div>
+      <ul>
+        <li>Distruye espacios entre los items</li>
+        <li>Sin usar el margen del contenedor</li>
+      </ul>
+    </div>
+    <section class="section-dieciseis">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>justify-content: space-evenly</h2>
+    <div>
+      <ul>
+        <li>
+          Distruye espacios entre los items, mas pequeños y mayor entre el
+          margen del contenedor
+        </li>
+        <li>Sin usar el margen del contenedor</li>
+      </ul>
+    </div>
+    <section class="section-diecisiete">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h1>Otras alineaciones</h1>
+    <br />
+
+    <h2>Colocar al medio: "justify-content: center" + "align-items: center"</h2>
+
+    <section class="section-dieciocho">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>Usando Order</h2>
+    <div>
+      <ul>
+        <li>Order se utiliza para ordernar las posiciones de elementos</li>
+        <li>Cada elemento debe tener su porpia clase</li>
+        <li>Funciona en modo columna</li>
+        <li>
+          Cada elemento que participe en el ordenamiento, debe tener su propio
+          atributo "order", sino no se cambiara de posicion. <br />
+          Ejm: .order-item1{order: 3;} ---- .order-item2{order:
+          2;}----.order-item3{order: 1;}
+        </li>
+      </ul>
+    </div>
+    <section class="section-diecinueve">
+      <div class="order-item1">
+        <p>Item 1</p>
+      </div>
+      <div class="order-item2">
+        <p>Item 2</p>
+      </div>
+      <div class="order-item3">
+        <p>Item 3</p>
+      </div>
+      <div>
+        <p class="NO-order-item4">Item 4</p>
+      </div>
+      <div>
+        <p class="NO-order-item5">Item 5</p>
+      </div>
+    </section>
+    <br />
+
+    <h2>align-self</h2>
+    <div>
+      <ul>
+        <li>Es un align-items, pero de forma individual</li>
+        <li>Usa todos los valores de align-items</li>
+      </ul>
+    </div>
+    <section class="section-veinte">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div class="as-item2">
+        <p>Item 2</p>
+      </div>
+      <div>
+        <p>Item 3</p>
+      </div>
+    </section>
+    <br />
+
+    <h1>Retos del profe</h1>
+
+    <h2>Reto del profe 1</h2>
+    <section class="section-retoProfe1">
+      <div>
+        <p>Item 1</p>
+      </div>
+      <div>
+        <p>Item 2</p>
+      </div>
+    </section>
+
+    <h2>Reto del profe 2</h2>
+    <section class="section-retoProfe2">
+      <div>
+        <img
+          src="https://logos-marcas.com/wp-content/uploads/2020/08/Coca-Cola-Logotipo-1941-presente.jpg"
+          alt=""
+          width="200px"
+        />
+      </div>
+      <div>
+        <nav class="nav">
+          <ul>
+            <li>Inicio</li>
+            <li>Nosotros</li>
+            <li>Proyectos</li>
+            <li>Contactos</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </body>
+</html>

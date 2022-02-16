@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* width: 99%; */
+  /* border: 1px solid rgb(247, 6, 6); */
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 10px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+section {
+  border: 1px solid rgb(86, 4, 4);
+  margin: 10px;
+}
+
+div ul li {
+  /* position: relative; */
+  /* left: 25px; */
+  font-size: 1.2em;
+  margin-left: 30px;
+  padding: 5px;
+}
+
+.ac-ul li {
+  font-size: 1em;
+  margin-left: 30px;
+  padding: 5px;
+}
+
+div ul li a {
+  text-decoration: none;
+}
+
+/* ****************FLEX****************** */
+
+/* flex-direction: row; */
+.section-uno {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+}
+
+.section-uno div p {
+  border: 2px solid yellow;
+}
+
+/* flex-direction: row-reverse; */
+.section-dos {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 10vh;
+}
+
+.section-dos div p {
+  border: 2px solid green;
+}
+
+/* flex-direction: column; */
+.section-tres {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+}
+
+.section-tres div p {
+  border: 2px solid pink;
+}
+
+/* flex-direction: column-reverse; */
+.section-cuatro {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 20vh;
+}
+
+.section-cuatro div p {
+  border: 2px solid purple;
+}
+
+/* flex-wrap: wrap; */
+.section-cinco {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-cinco div {
+  width: 25%;
+}
+
+.section-cinco div p {
+  border: 2px solid red;
+}
+
+/* flex-grow: 1; */
+.section-seis {
+  display: flex;
+}
+
+.section-seis div {
+  /* width: 25%; */
+  flex-grow: 1;
+}
+
+.section-seis div p {
+  border: 2px solid rgb(236, 255, 110);
+}
+
+/* flex-grow: 1 en item 2 y flex-grow: 2 en item 4 */
+.section-siete {
+  display: flex;
+  /* flex-grow: 1; */
+}
+/* .section-siete div {
+    width: 25%;
+  } */
+.section-siete div p {
+  border: 2px solid blue;
+}
+.fg-item2 {
+  flex-grow: 1;
+}
+.fg-item4 {
+  flex-grow: 2;
+}
+
+/* *************ALINEACIONES VERTICALES************ */
+
+/* align-items: center; */
+.section-ocho {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+}
+
+.section-ocho div p {
+  border: 2px solid rgb(241, 145, 0);
+}
+
+/* align-items: flex-start; */
+.section-nueve {
+  display: flex;
+  align-items: flex-start;
+  height: 15vh;
+}
+
+.section-nueve div p {
+  border: 2px solid rgb(88, 0, 241);
+}
+
+/* align-items: flex-end; */
+.section-diez {
+  display: flex;
+  align-items: flex-end;
+  height: 15vh;
+}
+
+.section-diez div p {
+  border: 2px solid rgb(31, 134, 224);
+}
+
+/* align-items: stretch; */
+.section-once {
+  display: flex;
+  align-items: stretch;
+  height: 15vh;
+}
+
+.section-once div {
+  border: 2px solid rgb(224, 31, 89);
+}
+
+/* .section-once div p {
+    border: 2px solid rgb(224, 31, 89);
+  } */
+
+/* *************ALINEACIONES HORIZONTALES************ */
+
+/* justify-content: center; */
+.section-doce {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+}
+
+.section-doce div p {
+  border: 2px solid rgb(31, 134, 224);
+}
+
+/* justify-content: flex-start; */
+.section-trece {
+  display: flex;
+  justify-content: flex-start;
+  height: 15vh;
+}
+
+.section-trece div p {
+  border: 2px solid rgb(131, 31, 224);
+}
+
+/* justify-content: flex-end; */
+.section-catorce {
+  display: flex;
+  justify-content: flex-end;
+  height: 15vh;
+}
+
+.section-catorce div p {
+  border: 2px solid rgb(31, 134, 224);
+}
+
+/* justify-content:space-between; */
+.section-quince {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+.section-quince div p {
+  border: 2px solid rgb(31, 134, 224);
+}
+
+/* justify-content:space-around; */
+.section-dieciseis {
+  display: flex;
+  justify-content: space-around;
+  height: 15vh;
+}
+
+.section-dieciseis div p {
+  border: 2px solid rgb(31, 224, 115);
+}
+
+/* justify-content:space-evenly; */
+.section-diecisiete {
+  display: flex;
+  justify-content: space-evenly;
+  height: 15vh;
+}
+
+.section-diecisiete div p {
+  border: 2px solid rgb(31, 31, 224);
+}
+
+/* *************OTRAS ALINEACIONES************ */
+
+/* Colocar al medio: "justify-content: center" + "align-items:  center" */
+.section-dieciocho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.section-dieciocho div p {
+  border: 2px solid rgb(31, 31, 224);
+}
+
+/* Usando Order" */
+.section-diecinueve {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items:  center; */
+  height: 15vh;
+}
+
+.section-diecinueve div p {
+  border: 2px solid rgb(36, 247, 204);
+}
+
+.order-item1 {
+  order: 3;
+}
+.order-item2 {
+  order: 2;
+}
+.order-item3 {
+  order: 1;
+}
+.NO-order-item4 {
+  border: 2px solid red !important;
+}
+.NO-order-item5 {
+  border: 2px solid red !important;
+}
+
+/* Align-self; */
+.section-veinte {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+}
+
+.section-veinte div p {
+  border: 2px solid rgb(31, 134, 224);
+}
+
+.as-item2 {
+  align-self: flex-end;
+  border: 2px solid red !important;
+}
+
+/* Reto del profe 1 */
+.section-retoProfe1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+}
+
+.section-retoProfe1 div p {
+  border: 2px solid rgb(31, 134, 224);
+  height: 10vh;
+  margin: 10px;
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Reto del profe 2 */
+.section-retoProfe2 {
+  font-family: sans-serif;
+  height: 20vh;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  /* border: 2px solid rgb(224, 124, 31); */
+}
+
+.nav ul li {
+  border: 2px solid rgb(31, 134, 224);
+}
+
+.nav ul > li {
+  margin: 10px;
+}
