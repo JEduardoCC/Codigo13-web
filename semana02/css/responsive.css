@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+div ul li{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+body{
+    background-color: blue;
+}
+
+section{
+    border: 2px solid black;
+}
+section ul li{
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.section-uno{
+    height: 100vh;
+}
+.section-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.section-principal div{
+    width: 100px;
+    height: 100px;
+
+}
+
+.box-uno{
+    background-color: black;
+}
+
+.box-dos{
+    background-color: green;
+}
+
+.box-tres{
+    background-color: palevioletred;
+}
+
+
+
+/*celulares pequeños*/
+@media only screen and (max-width: 600px){
+    body{
+        background-color: green;
+
+    }
+    .box-uno{
+        background-color: white;
+    }
+
+    .section-principal{
+        flex-direction: column;
+    }
+}
+/* tablets y phones */
+@media only screen and (min-width: 600px){
+    body{
+        background-color: aqua;
+    }
+}
+ /* El tamaño estandar de laptops 13, ipads tablest mayor a 12px. */
+ @media only screen and (min-width: 992px){
+    body{
+        background-color: yellow;
+    }
+}
+ /* el ancho estandar de latpstops, pc. desktops min px */
+
+ @media only screen and (min-width: 1200px){
+     body{
+         background-color: red;
+     }
+ }
+
+
+

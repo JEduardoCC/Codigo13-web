@@ -24,15 +24,16 @@ section{
     background-color: hsl(216, 50%, 16%);
     /* border: 2px solid rgb(115, 255, 0); */
     border-radius: 14px;
+    
 }
 
 .card-foto{
     /* border: 3px solid white; */
+    /* background: url(../Archivos\ de\ retos/reto1/images/image-equilibrium.jpg); */
     display: flex;
     align-items: center;
     justify-content: center;
-
-    height: 30vh;
+    height: 45vh;
     
 }
 

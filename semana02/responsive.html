@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enlazando archivo css -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Responsive</title>
+  </head>
+  <body>
+    <div>
+      <h1>Responsive</h1>
+      <h2 style="text-align: center">Media Query</h2><br>
+      <ul>
+        <li>max-width: 600px, quiere decir que va a funcionar desde 0 - 600px.</li>
+        <li>min-width: 600px, quiere decir que va a funcionar desde 600px - infinito. (o hasta encontrar un siguiente min-with)</li>
+      </ul>
+    </div>
+<br>
+    <section>
+      <h2>@media only screen and (min-width: 1200px){
+        body{
+            background-color: red;
+        }
+    }
+   </h2>
+      <p>
+          <ul>
+              <li>
+                  El ancho estandar de laptops, pc, desktops en pixeles.
+              </li>
+          </ul>
+      </p>
+    </section>
+<br>
+    <section>
+        <h2>@media only screen and (min-width: 992px){
+            body{
+                background-color: yellow;
+            }
+        }</h2>
+        <p>
+            <ul>
+                <li>
+                    El ancho estandar de laptops 13, ipads tablest mayor a 12px.
+                </li>
+            </ul>
+        </p>
+      </section>
+<br>
+      <section>
+        <h2>@media only screen and (min-width: 600px){
+            body{
+                background-color: aqua;
+            }
+        }</h2>
+        <p>
+            <ul>
+                <li>
+                   Tablets y celulares
+                </li>
+            </ul>
+        </p>
+      </section>
+      <br>
+      <section>
+        <h2>@media only screen and (max-width: 600px){
+            body{
+                background-color: green;
+            }
+        }</h2>
+        <p>
+            <ul>
+                <li>
+                   Celulares pequeños
+                </li>
+            </ul>
+        </p>
+      </section>
+
+     
+      <section class="section-uno">
+            <h2>Ejemplo Profe</h2>
+            <div class="section-principal">
+                <div class="box-uno">
+                                
+                </div>
+                <div class="box-dos">
+        
+                </div>
+                <div class="box-tres">
+        
+                </div>            
+            </div>
+      </section>
+
+  </body>
+</html>

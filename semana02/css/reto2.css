@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* header{
+    font-family: 'Open Sans', sans-serif;
+} */
+
+.nav {
+  /* border: solid; */
+  /* margin-left: 30px; */
+  /* margin-right: 30px; */
+  align-items: center;
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
+}
+
+.nav div {
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.button-free {
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  padding: 12px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.section-one {
+  /* border: solid; */
+  align-items: center;
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.tittle {
+  color: hsl(192, 100%, 9%);
+  font-size: 4em;
+  text-transform: capitalize;
+}
+
+.text-normal {
+  font-size: 18px;
+  margin: auto;
+  /* padding-bottom: 40px; */
+  padding-top: 40px;
+  width: 40%;
+}
+
+.button-pink {
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.21);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-transform: capitalize;
+}
+
+.section-two {
+  display: flex;
+  justify-content: center;
+  /* border: solid; */
+}
+
+/* .section-two img {
+  padding-top: 25px;
+} */
+
+.section-three {
+  /* border: solid; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+}
+
+.numbers {
+  font-size: 3.5em;
+  color: hsl(192, 100%, 9%);
+}
+
+.text-secondary {
+  margin: top 15px;
+  color: rgb(128, 128, 128, 0.5);
+}
+
+.background-top {
+  background: url(../Archivos\ de\ retos/reto2/images/bg-section-top-desktop-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: solid; */
+  height: 22vh;
+}
+
+.section-four {
+  height: 66vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(207, 100%, 98%);
+}
+
+.section-four div:first-child {
+  width: 50%;
+}
+
+.tittle-sections {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  /* border: solid; */
+}
+
+.img-desktop {
+  width: 600px;
+}
+
+.text-section {
+  /* width: 100%; */
+  /* border: solid; */
+}
+
+.background-bottom {
+  background: url(../Archivos\ de\ retos/reto2/images/bg-section-bottom-desktop-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: solid; */
+  height: 22vh;
+}
+
+.section-five {
+  height: 66vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  /* border: solid; */
+}
+
+.section-five div {
+  /* border: solid green; */
+  /* margin-left: 90px !important; */
+}
+
+.section-six {
+  /* border: solid; */
+  height: 66vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(207, 100%, 98%);
+}
+
+.section-six div:first-child {
+  width: 50%;
+}
+
+.background-bottom2 {
+  background: url(../Archivos\ de\ retos/reto2/images/bg-section-bottom-desktop-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: solid; */
+  height: 22vh;
+  /* position: relative; */
+  /* right: 50px; */
+  /* width: 100%; */
+}
+
+.background-bottom3 {
+  background: url(../Archivos\ de\ retos/reto2/images/bg-footer-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: solid; */
+  height: 22vh;
+  /* position: relative; */
+  /* right: 50px; */
+  /* width: 100%; */
+}
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: solid green; */
+}
+
+/* .footer div{
+  background-color: brown;
+} */
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer div {
+  padding: 30px;
+  /* border: 2px solid orange; */
+}
+
+.footer div p {
+  padding: 20px;
+}
+
+.logo-white {
+  filter: brightness(0) invert(1);
+}
+
+.text-footer {
+  width: 45%;
+}
+
+.title-footer {
+  font-size: 1.5em;
+  margin-left: 18px;
+  text-transform: uppercase;
+}
+
+.input-footer {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 280px;
+}
+
+.button-footer {
+  background-color: hsl(322, 100%, 66%);
+  margin-left: 14px;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
