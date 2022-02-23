@@ -1,0 +1,45 @@
+*{margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    border: solid;
+}
+
+section div{
+    width: 300px; 
+    padding: 10px;
+    margin: 5px;
+    border: solid black;
+    text-align: center;
+}
+/* TIPOS DE GRADIENTES */
+.gradiente-uno{
+    margin-left: 10px;
+    /*Vamos a iniciar con 2 valores de tipo color*/
+    background: linear-gradient(45deg,red,blue);
+    color: white;
+}
+
+.gradiente-dos{
+    margin-left: 310px;
+    color: white;
+    background: linear-gradient(to left top,#000,red);
+    /* background: linear-gradient(to left bottom,#000,red,yellow,green); */
+}
+
+.gradiente-tres{
+/* height: 300px; */
+width: 500px;
+margin-left: 610px;
+background: linear-gradient(45deg,orange,blue,green,white 65%), linear-gradient(190deg,black,green 35%);
+
+}
